@@ -15,5 +15,5 @@ spring:
       ddl-auto: create
 logging:
   level:
-    com.com.example.maps_apo: debug
-    org.hibernate.type.descriptor.sql: trace
+    org.apache.http: DEBUG
+    httpclient.wire: DEBUG

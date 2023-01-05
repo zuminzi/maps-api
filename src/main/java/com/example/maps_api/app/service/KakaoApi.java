@@ -10,7 +10,7 @@ import java.net.URL;
 import java.net.URLEncoder;
 
 @Service
-public class KakaoAPI {
+public class KakaoApi {
 
     @Value("${REST_API_KEY}")
     private String kakao_apikey;

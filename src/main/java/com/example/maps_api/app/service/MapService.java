@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class MapService {
 
-    private final KakaoAPI kakaoAPI;
+    private final KakaoApi kakaoAPI;
 
     public String searchByKeyword() {
         return kakaoAPI.searchByKeyword();

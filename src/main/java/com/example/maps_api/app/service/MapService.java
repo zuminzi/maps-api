@@ -1,5 +1,6 @@
 package com.example.maps_api.app.service;
 
+import com.example.maps_api.app.dto.response.KaKaoResponseDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -8,9 +9,9 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class MapService {
 
-    private final KakaoApi kakaoAPI;
+    private final KakaoApi kakaoApi;
 
-    public String searchByKeyword() {
-        return kakaoAPI.searchByKeyword();
+    public KaKaoResponseDto searchByKeyword() {
+        return kakaoApi.searchByKeyword();
     }
 }

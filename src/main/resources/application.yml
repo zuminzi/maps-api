@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev
+    active: dev, base-addi
   datasource:
     driver-class-name: org.mariadb.jdbc.Driver
   jpa:
@@ -15,6 +15,3 @@ logging:
   level:
     com.com.example.maps_apo: debug
     org.hibernate.type.descriptor.sql: trace
-jasypt:
-  encryptor:
-    bean: jasyptStringEncryptor

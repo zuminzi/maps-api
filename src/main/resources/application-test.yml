@@ -1,5 +1,5 @@
 spring:
   datasource:
     url: jdbc:mariadb://127.0.0.1:3306/maps_api__test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=Asia/Seoul
-    username:
-    password:
+    username: user1
+    password: Ttest12341234@

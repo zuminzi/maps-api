@@ -15,3 +15,6 @@ logging:
   level:
     com.com.example.maps_apo: debug
     org.hibernate.type.descriptor.sql: trace
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor

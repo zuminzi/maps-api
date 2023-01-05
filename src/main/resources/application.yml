@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev, base-addi
+    active: dev
     include:
       - base-addi
   datasource:

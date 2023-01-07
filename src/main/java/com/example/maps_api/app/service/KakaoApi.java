@@ -21,7 +21,7 @@ public class KakaoApi {
     private String kakao_apikey;
     private final RestTemplate restTemplate;
 
-    public HashMap<String, Object> searchByKeyword() {
+    public HashMap<String, Object> searchByKeyword(String keyword) {
         // 1. 결과값 담을 객체 생성
         HashMap<String, Object> resultMap = new HashMap<String, Object>();
 
@@ -33,7 +33,7 @@ public class KakaoApi {
 
         // 3. 파라미터를 사용하여 요청 URL 정의
         String apiURL = "https://dapi.kakao.com/v2/local/search/keyword.JSON?"
-                + "query=" + "성수 포토부스"; // request param (x, y, radius 등 검색 조건 추가 가능)
+                + "query=" + keyword; // request param (x, y, radius 등 검색 조건 추가 가능)
 
         // 4. exchange 메서드로 api 호출
         ResponseEntity<KaKaoResponseDto> response = restTemplate.exchange(apiURL, HttpMethod.GET, entity,KaKaoResponseDto.class);

@@ -15,7 +15,7 @@ public class MapService {
 
     private final KakaoApi kakaoApi;
 
-    public HashMap<String, Object> searchByKeyword() {
-        return kakaoApi.searchByKeyword();
+    public HashMap<String, Object> searchByKeyword(String keyword) {
+        return kakaoApi.searchByKeyword(keyword);
     }
 }

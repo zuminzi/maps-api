@@ -14,9 +14,9 @@ public class MapController {
 
     private final MapService mapService;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/search", method = RequestMethod.GET)
     @ResponseBody
-    public HashMap<String, Object> getRest(){
-        return mapService.searchByKeyword();
+    public HashMap<String, Object> getRest(@RequestParam String keyword){
+        return mapService.searchByKeyword(keyword);
     }
 }
